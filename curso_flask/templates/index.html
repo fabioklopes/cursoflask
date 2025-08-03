@@ -8,11 +8,12 @@
 <body>
     <div>
         <h3>Estudos em Flask</h3>
-        <h5>Camp Code - CodeON Softwares</h5>
+        <h5>{{context.usuario}} (idade {{context.idade}}) - CodeON Softwares</h5>
     </div>
 
     <div>
         <p>Bem vindos à aula de Flask!</p>
+        <a href="{{ url_for('novapagina') }}">Vai !!!</a>
     </div>
 </body>
 </html>
